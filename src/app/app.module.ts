@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-
+import { CalculateService} from './calculate.service';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CalculateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
